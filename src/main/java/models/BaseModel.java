@@ -1,12 +1,7 @@
 package models;
 
-import views.BaseScreen;
+import javax.swing.*;
+
 public abstract class BaseModel {
-    protected final BaseScreen screen;
-
-    public BaseModel(BaseScreen screen) {
-        this.screen = screen;
-    }
-
-    public abstract void execute();
+    public abstract void execute(JButton button);
 }

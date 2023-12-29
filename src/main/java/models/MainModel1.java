@@ -1,15 +1,10 @@
 package models;
 
-import views.BaseScreen;
+import javax.swing.*;
 
 public final class MainModel1 extends BaseModel {
-
-    public MainModel1(BaseScreen screen) {
-        super(screen);
-    }
-
     @Override
-    public void execute() {
-        screen.setName("MainModel2");
+    public void execute(JButton button) {
+        button.setText("Text 1");
     }
 }

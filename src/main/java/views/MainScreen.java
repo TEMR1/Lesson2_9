@@ -5,7 +5,6 @@ import javax.swing.*;
 
 public final class MainScreen extends BaseScreen {
     private JButton button;
-    private String buttonName = "open";
 
     public MainScreen(BaseController controller) {
         super(controller);
@@ -15,7 +14,7 @@ public final class MainScreen extends BaseScreen {
     protected void initComponents() {
         setLayout(null);
         button = new JButton();
-        button.setName(buttonName);
+        button.setText("Text");
         button.setBounds(100, 100, 200, 100);
         button.addMouseListener(controller);
         add(button);
